@@ -1,0 +1,6 @@
+function [pks,locsRBCs]  = findpeaks_buildin(data_temp)
+
+[pks,locsRBCs] = findpeaks(data_temp,...
+                          'SortStr','none',...
+                          'MinPeakDistance',1,... % 1 or 3
+                          'MinPeakHeight',max(data_temp)*0.4); 
